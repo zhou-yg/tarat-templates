@@ -1,7 +1,7 @@
 import { useTarat } from 'tarat-connect'
 import React, { useState } from 'react'
 import todoHook from '../hooks/todo.js'
-import '../styles/todos.less'
+import './todos.less'
 
 const TodoItem = (props) => {
   const checked = props.status === 'done'
