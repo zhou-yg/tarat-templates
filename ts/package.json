@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "a tarat unit",
   "scripts": {
-    "init": "pnpm install && npm run prisma:dev",
+    "init": "pnpm i && npm run p:dev",
     "dev": "tarat dev",
+    "build": "tarat build",
+    "start": "tarat start",
     "p:dev": "prisma migrate dev && prisma generate",
     "p:gen": "prisma generate",
     "p:deploy": "prisma migrate deploy",
@@ -14,8 +16,14 @@
     "schema": "./models/schema.prisma"
   },
   "dependencies": {
-    "@prisma/client": "^3.15.1",
+  },
+  "devDependencies": {
     "@types/react-dom": "^18.0.5",
+    "@types/lodash": "^4.14.182",
+    "less": "^4.1.2"
+  },
+  "peerDependencies": {
+    "@prisma/client": "^3.15.1",
     "lodash": "^4.17.21",
     "prisma": "^3.15.1",
     "react": "^18.1.0",
@@ -24,9 +32,5 @@
     "tarat-connect": "*",
     "tarat-core": "*",
     "tarat-server": "*"
-  },
-  "devDependencies": {
-    "@types/lodash": "^4.14.182",
-    "less": "^4.1.2"
   }
 }
