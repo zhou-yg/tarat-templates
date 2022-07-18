@@ -1,6 +1,7 @@
 {
   "name": "my-tarat-unit",
   "version": "0.0.1",
+  "tarat": {},
   "description": "a tarat unit",
   "scripts": {
     "init": "pnpm i && npm run p:dev",
