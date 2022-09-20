@@ -1,6 +1,6 @@
 import {
   state,
-} from 'tarat-core'
+} from 'tarat/core'
 
 export default function todo () {
 
