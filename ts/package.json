@@ -16,7 +16,14 @@
   "prisma": {
     "schema": "./models/schema.prisma"
   },
+  "files": [
+    "dist",
+    "pacakge.json",
+    "types",
+    "README.md"
+  ],
   "dependencies": {
+    "tarat": "*"
   },
   "devDependencies": {
     "@types/react-dom": "^18.0.5",
