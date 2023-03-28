@@ -1,4 +1,4 @@
-import { useTarat } from 'tarat/connect'
+import { useSignal } from '@polymita/connect/dist/react'
 import React, { useState } from 'react'
 
 const Todos = () => {

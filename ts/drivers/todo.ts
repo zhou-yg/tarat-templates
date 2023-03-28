@@ -1,6 +1,6 @@
 import {
   state,
-} from 'tarat/core'
+} from '@polymita/signal-model'
 
 export default function todo () {
 
