@@ -104,7 +104,10 @@ dist
 .tern-port
 
 customPrismaClient
+models/customPrismaClient
 .tarat/
 dist/
 
 ./models/dev.db
+
+.DS_Store
