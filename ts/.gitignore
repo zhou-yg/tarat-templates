@@ -104,10 +104,11 @@ dist
 .tern-port
 
 customPrismaClient
-models/customPrismaClient
 .tarat/
 dist/
 
-./models/dev.db
+models/dev.db
+.test/
 
-.DS_Store
+app/polymita/views
+app/polymita/signals
