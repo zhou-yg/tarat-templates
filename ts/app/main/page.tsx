@@ -1,12 +1,15 @@
 'use client'
-import App from '@/app/polymita/views/App'
-import '@/app/polymita/views/AsideNewForTest'
-import { modulesLinkMap } from '@/common/moduleOverride';
+import AppFn from '@/app/polymita/views/App'
+import * as mo from '../moduleOverride';
 
-console.log('modulesLinkMap: ', modulesLinkMap);
+console.log('modulesLinkMap: ', mo.modulesLinkMap);
+
+const App = AppFn(mo.modulesLinkMap, mo.modulesActiveMap)
 
 export default () => {
   return (
-    <App />
+    <App 
+      title="Vesta Test"
+    />
   )
 }
